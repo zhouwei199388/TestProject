@@ -7,25 +7,15 @@ import java.sql.*;
  */
 public class LoginDao {
     public static int Login(String userName, String passWord) {
-
         int loginType = 1;
         Connection conn;
 
-        String driver = "com.mysql.jdbc.Driver";
-
-        String url = "jdbc:mysql://127.0.0.1:3306/testDemo";
-
-        String user = "root";
-        String sqlPassWord = "zw199388";
-
         try {
-            Class.forName(driver);
-            conn = DriverManager.getConnection(url, user, sqlPassWord);
-
+            Class.forName(ConnectionMessage.driver);
+            conn = DriverManager.getConnection(ConnectionMessage.url, ConnectionMessage.user, ConnectionMessage.sqlPassWord);
             if (!conn.isClosed()) {
                 System.out.print("Succeeded connection to the database ");
             }
-//            Statement statement = conn.createStatement();
             PreparedStatement p = conn.prepareStatement("select * from userinfo WHERE userName=? and passWord=?");
 
             p.setString(1, userName);

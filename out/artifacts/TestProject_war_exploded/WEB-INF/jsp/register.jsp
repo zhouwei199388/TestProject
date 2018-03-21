@@ -12,5 +12,11 @@
 </head>
 <body>
 
+<form action="register" method="post">
+    用户名：<input type="text" name="username"><br/>
+    密&nbsp;&nbsp;码<input type="number" name="password"><br/>
+    <input type="submit" value="注册">
+</form>
+
 </body>
 </html>
