@@ -1,12 +1,15 @@
 package test.springMVC.dao;
 
+import org.springframework.stereotype.Repository;
+
 import java.sql.*;
 
 /**
  * Created by zouwei on 2018/3/19.
  */
+@Repository
 public class LoginDao {
-    public static int Login(String userName, String passWord) {
+    public int Login(String userName, String passWord) {
         int loginType = 1;
         Connection conn;
 

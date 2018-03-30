@@ -1,5 +1,7 @@
 package test.springMVC.dao;
 
+import org.springframework.stereotype.Repository;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,9 +10,10 @@ import java.sql.SQLException;
 /**
  * Created by zouwei on 2018/3/20.
  */
+@Repository
 public class RegisterDao {
 
-    public static int register(String userName, String passWord) {
+    public int register(String userName, String passWord) {
         int registerType = 1;
         Connection conn;
         try {

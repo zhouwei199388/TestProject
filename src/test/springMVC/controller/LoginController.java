@@ -1,5 +1,6 @@
 package test.springMVC.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,10 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class LoginController {
 
+
+    @Autowired
+    private LoginDao mLoginDao;
+
     @RequestMapping(value = "/main", method = RequestMethod.GET)
     public String main() {
         return "login";
@@ -25,7 +30,7 @@ public class LoginController {
         String userName = request.getParameter("userName");
         String passWord = request.getParameter("passWord");
 
-        int type = LoginDao.Login(userName, passWord);
+        int type = mLoginDao.Login(userName, passWord);
         if (type == 0) {
             return "hello";
         } else {

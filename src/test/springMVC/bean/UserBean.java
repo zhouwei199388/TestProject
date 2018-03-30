@@ -1,8 +1,11 @@
 package test.springMVC.bean;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Created by zouwei on 2017/9/12.
  */
+@Component
 public class UserBean {
 
     private String userName;
