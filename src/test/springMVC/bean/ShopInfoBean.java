@@ -7,8 +7,17 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class ShopInfoBean {
+    private int shopId;
     private String shopName;
     private String shopAddress;
+
+    public int getShopId() {
+        return shopId;
+    }
+
+    public void setShopId(int shopId) {
+        this.shopId = shopId;
+    }
 
     public String getShopName() {
         return shopName;

@@ -3,10 +3,7 @@ package test.springMVC.dao;
 import org.springframework.stereotype.Repository;
 import test.springMVC.bean.ShopInfoBean;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * Created by 15090 on 2018/4/1.
@@ -14,17 +11,25 @@ import java.sql.SQLException;
 @Repository
 public class ShopInfoDao {
 
-    public int setShopInfo(ShopInfoBean shopInfo) {
-        int type = 1;
+    /**
+     * 添加账户及信息
+     *
+     * @param shopInfo
+     * @return
+     */
+    public int addShopInfo(ShopInfoBean shopInfo) {
+        int type = ConnectionMessage.SERVER_ERROR_CODE;
         Connection conn;
         try {
             Class.forName(ConnectionMessage.driver);
-            conn = DriverManager.getConnection(ConnectionMessage.shopUrl,ConnectionMessage.user,ConnectionMessage.sqlPassWord);
-            PreparedStatement preparedStatement = conn.prepareStatement("INSERT shopinfo(shopName,shopAddress) VALUE (?,?)");
-            preparedStatement.setString(1,shopInfo.getShopName());
+            conn = DriverManager.getConnection(ConnectionMessage.shopUrl, ConnectionMessage.user, ConnectionMessage.sqlPassWord);
+            PreparedStatement preparedStatement = conn.prepareStatement("INSERT shopinfo(shopName,shopAddress) " +
+                    "VALUE (?,?)");
+            System.out.print(shopInfo.getShopAddress());
+            preparedStatement.setString(1, shopInfo.getShopName());
             preparedStatement.setString(2, shopInfo.getShopAddress());
             preparedStatement.executeUpdate();
-            type=0;
+            type = ConnectionMessage.SUCCESS_CODE;
             preparedStatement.close();
             conn.close();
         } catch (ClassNotFoundException e) {
@@ -35,5 +40,62 @@ public class ShopInfoDao {
         return type;
     }
 
+    /**
+     * 修改商户信息
+     *
+     * @param shopInfoBean
+     * @return
+     */
+    public int modifyShopInfo(ShopInfoBean shopInfoBean) {
+        int type = ConnectionMessage.SERVER_ERROR_CODE;
+        String sql = "update shopinfo set";
+        Connection conn;
+        try {
+            Class.forName(ConnectionMessage.driver);
+            conn = DriverManager.getConnection(ConnectionMessage.url, ConnectionMessage.user, ConnectionMessage
+                    .sqlPassWord);
+            PreparedStatement ps = conn.prepareStatement("UPDATE shopinfo SET shopName=? shopAddress=? WHERE shopId " +
+                    "LIKE ?");
+            ps.setString(1, shopInfoBean.getShopName());
+            ps.setString(2, shopInfoBean.getShopAddress());
+            ps.setInt(3, shopInfoBean.getShopId());
+            ps.executeUpdate();
+            type = ConnectionMessage.SUCCESS_CODE;
+            ps.close();
+            conn.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return type;
+    }
+
+    /**
+     * 是否存在数据
+     *
+     * @param shopId
+     * @return
+     */
+    public boolean sqlExists(int shopId) {
+        boolean type = false;
+        Connection conn;
+        try {
+            Class.forName(ConnectionMessage.driver);
+            conn = DriverManager.getConnection(ConnectionMessage.url, ConnectionMessage.user, ConnectionMessage
+                    .sqlPassWord);
+            PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM shopinfo WHERE shopId = ?");
+            preparedStatement.setInt(1, shopId);
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs.next()) {
+                return true;
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return type;
+    }
 
 }
