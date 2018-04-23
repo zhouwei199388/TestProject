@@ -1,13 +1,11 @@
 package test.springMVC.controller;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import jdk.nashorn.internal.ir.debug.JSONWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import test.springMVC.bean.Shop;
+import test.springMVC.bean.response.Shop;
 import test.springMVC.bean.ShopInfoBean;
 import test.springMVC.dao.ShopInfoDao;
 import test.springMVC.utils.ResponseUtils;

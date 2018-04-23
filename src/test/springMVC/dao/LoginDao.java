@@ -1,6 +1,8 @@
 package test.springMVC.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import test.springMVC.bean.response.ShopInfoResponse;
 
 import java.sql.*;
 
@@ -9,26 +11,32 @@ import java.sql.*;
  */
 @Repository
 public class LoginDao {
-    public int Login(String userName, String passWord) {
-        int loginType = 1;
-        Connection conn;
+    @Autowired
+    private ShopInfoResponse mShopInfo;
 
+    public ShopInfoResponse Login(String userName, String passWord) {
+        mShopInfo.getHeader().error();
+        Connection conn;
         try {
             Class.forName(ConnectionMessage.driver);
             conn = DriverManager.getConnection(ConnectionMessage.url, ConnectionMessage.user, ConnectionMessage.sqlPassWord);
             if (!conn.isClosed()) {
                 System.out.print("Succeeded connection to the database ");
             }
-            PreparedStatement p = conn.prepareStatement("select * from userinfo WHERE userName=? and passWord=?");
+            PreparedStatement p = conn.prepareStatement("select * from shopinfo WHERE shopNumber=? and passWord=?");
 
             p.setString(1, userName);
-            p.setInt(2, Integer.parseInt(passWord));
+            p.setString(2, passWord);
             ResultSet rs = p.executeQuery();
             if (rs.next()) {
                 String username = rs.getString("userName");
                 System.out.print("userName = " + username);
                 if (username != null && username != "") {
-                    loginType = 0;
+                    mShopInfo.getHeader().success();
+                    mShopInfo.setShopName(rs.getString("shopName"));
+                    mShopInfo.setShopNumber(rs.getString("shopNumber"));
+                    mShopInfo.setShopAddress(rs.getString("shopAddress"));
+                    mShopInfo.setPassWord(rs.getString("passWord"));
                 }
             }
             rs.close();
@@ -38,6 +46,6 @@ public class LoginDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return loginType;
+        return mShopInfo;
     }
 }
