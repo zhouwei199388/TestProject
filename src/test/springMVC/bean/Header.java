@@ -1,10 +1,12 @@
 package test.springMVC.bean;
 
+import org.springframework.stereotype.Component;
 import test.springMVC.dao.ConnectionMessage;
 
 /**
  * Created by zouwei on 2018/4/17.
  */
+@Component
 public class Header {
     private int resultCode;
     private String resultText;
@@ -25,14 +27,5 @@ public class Header {
         this.resultText = resultText;
     }
 
-    public void error() {
-        this.resultCode = ConnectionMessage.SERVER_ERROR_CODE;
-        this.resultText = ConnectionMessage.SERVER_ERROR_TEXT;
-    }
-
-    public void success() {
-        this.resultCode = ConnectionMessage.SUCCESS_CODE;
-        this.resultText = ConnectionMessage.SUCCESS_TEXT;
-    }
 
 }

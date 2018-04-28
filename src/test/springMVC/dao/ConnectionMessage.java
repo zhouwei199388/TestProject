@@ -18,6 +18,7 @@ public class ConnectionMessage {
 
 
     public static final String SERVER_ERROR_TEXT = "服务器错误";
+    public static final String ERROR_PWD_NULL = "账号与密码不匹配";
     public static final String SUCCESS_TEXT = "请求成功";
 
 }

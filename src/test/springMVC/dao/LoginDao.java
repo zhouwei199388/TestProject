@@ -1,6 +1,5 @@
 package test.springMVC.dao;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import test.springMVC.bean.response.ShopInfoResponse;
 
@@ -11,15 +10,15 @@ import java.sql.*;
  */
 @Repository
 public class LoginDao {
-    @Autowired
-    private ShopInfoResponse mShopInfo;
 
     public ShopInfoResponse Login(String userName, String passWord) {
-        mShopInfo.getHeader().error();
+        ShopInfoResponse shopInfoResponse = new ShopInfoResponse();
+        shopInfoResponse.error();
         Connection conn;
         try {
             Class.forName(ConnectionMessage.driver);
-            conn = DriverManager.getConnection(ConnectionMessage.url, ConnectionMessage.user, ConnectionMessage.sqlPassWord);
+            conn = DriverManager.getConnection(ConnectionMessage.shopUrl, ConnectionMessage.user, ConnectionMessage
+                    .sqlPassWord);
             if (!conn.isClosed()) {
                 System.out.print("Succeeded connection to the database ");
             }
@@ -29,15 +28,17 @@ public class LoginDao {
             p.setString(2, passWord);
             ResultSet rs = p.executeQuery();
             if (rs.next()) {
-                String username = rs.getString("userName");
+                String username = rs.getString("shopNumber");
                 System.out.print("userName = " + username);
                 if (username != null && username != "") {
-                    mShopInfo.getHeader().success();
-                    mShopInfo.setShopName(rs.getString("shopName"));
-                    mShopInfo.setShopNumber(rs.getString("shopNumber"));
-                    mShopInfo.setShopAddress(rs.getString("shopAddress"));
-                    mShopInfo.setPassWord(rs.getString("passWord"));
+                    shopInfoResponse.success();
+                    shopInfoResponse.setShopName(rs.getString("shopName"));
+                    shopInfoResponse.setShopNumber(rs.getString("shopNumber"));
+                    shopInfoResponse.setShopAddress(rs.getString("shopAddress"));
+                    shopInfoResponse.setPassWord(rs.getString("passWord"));
                 }
+            }else{
+                shopInfoResponse.getHeader().setResultText(ConnectionMessage.ERROR_PWD_NULL);
             }
             rs.close();
             conn.close();
@@ -46,6 +47,6 @@ public class LoginDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return mShopInfo;
+        return shopInfoResponse;
     }
 }

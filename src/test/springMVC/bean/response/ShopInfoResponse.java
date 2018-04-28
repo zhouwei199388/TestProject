@@ -7,7 +7,7 @@ import test.springMVC.bean.BaseHeaderBean;
  * Created by zouwei on 2018/4/17.
  */
 @Component
-public class ShopInfoResponse extends BaseHeaderBean {
+public class  ShopInfoResponse extends BaseHeaderBean {
 
     private String shopName;
     private String passWord;

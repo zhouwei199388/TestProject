@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import test.springMVC.bean.response.Shop;
 import test.springMVC.bean.ShopInfoBean;
+import test.springMVC.bean.response.ShopResponse;
 import test.springMVC.dao.ShopInfoDao;
 import test.springMVC.utils.ResponseUtils;
 
@@ -57,15 +57,14 @@ public class ShopInfoController {
 
     }
 
-
     @RequestMapping(value = "/getShopInfo", method = RequestMethod.GET)
     public void getShopInfo(HttpServletRequest request, HttpServletResponse response) {
         ResponseUtils.renderJson(response, new Gson().toJson(getShopInfos()));
     }
 
-    private Shop getShopInfos() {
+    private ShopResponse getShopInfos() {
         List<ShopInfoBean> shopInfoBeans = new ArrayList<>();
-        Shop shop = new Shop();
+        ShopResponse shop = new ShopResponse();
         for (int i = 0; i < 100; i++) {
             ShopInfoBean shopInfoBean = new ShopInfoBean();
             shopInfoBean.setShopId(i);
