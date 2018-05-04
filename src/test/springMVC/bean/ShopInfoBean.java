@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class ShopInfoBean {
     private int shopId;
+    private String shopNumber;
+    private String passWord;
     private String shopName;
     private String shopAddress;
 
@@ -33,5 +35,20 @@ public class ShopInfoBean {
 
     public void setShopAddress(String shopAddress) {
         this.shopAddress = shopAddress;
+    }
+    public String getShopNumber() {
+        return shopNumber;
+    }
+
+    public void setShopNumber(String shopNumber) {
+        this.shopNumber = shopNumber;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 }
