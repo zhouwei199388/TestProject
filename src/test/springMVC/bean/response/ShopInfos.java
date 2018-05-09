@@ -3,12 +3,13 @@ package test.springMVC.bean.response;
 import org.springframework.stereotype.Component;
 import test.springMVC.bean.model.ShopInfoBean;
 
+import java.util.List;
+
 /**
- * Created by zouwei on 2018/4/17.
+ * Created by zouwei on 2018/4/11.
  */
 @Component
-public class ShopInfoResponse extends BaseResponse {
-
-    public ShopInfoBean shopInfo;
+public class ShopInfos extends BaseResponse {
+   public List<ShopInfoBean> shopInfoBeans;
 
 }

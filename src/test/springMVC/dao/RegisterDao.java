@@ -1,8 +1,8 @@
 package test.springMVC.dao;
 
 import org.springframework.stereotype.Repository;
-import test.springMVC.bean.Header;
-import test.springMVC.bean.ShopInfoBean;
+import test.springMVC.bean.response.ResponseHeader;
+import test.springMVC.bean.model.ShopInfoBean;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,10 +17,10 @@ import java.sql.SQLException;
 @Repository
 public class RegisterDao {
 
-    public Header register(ShopInfoBean shopInfoBean) {
-        Header header = new Header();
-        header.setResultCode(ConnectionMessage.SERVER_ERROR_CODE);
-        header.setResultText(ConnectionMessage.SERVER_ERROR_TEXT);
+    public ResponseHeader register(ShopInfoBean shopInfoBean) {
+        ResponseHeader header = new ResponseHeader();
+        header.resultCode=ConnectionMessage.SERVER_ERROR_CODE;
+        header.resultText=ConnectionMessage.SERVER_ERROR_TEXT;
         Connection conn;
         try {
             Class.forName(ConnectionMessage.driver);
@@ -32,13 +32,13 @@ public class RegisterDao {
             PreparedStatement ps = conn.prepareStatement("INSERT shopinfo(shopNumber,passWord,shopName,shopAddress) " +
                     "VALUES " +
                     "(?,?,?,?)");
-            ps.setString(1, shopInfoBean.getShopNumber());
-            ps.setString(2, shopInfoBean.getPassWord());
-            ps.setString(3, shopInfoBean.getShopName());
-            ps.setString(4, shopInfoBean.getShopAddress());
+            ps.setString(1, shopInfoBean.shopNumber);
+            ps.setString(2, shopInfoBean.passWord);
+            ps.setString(3, shopInfoBean.shopName);
+            ps.setString(4, shopInfoBean.shopAddress);
             ps.executeUpdate();
-            header.setResultCode(ConnectionMessage.SUCCESS_CODE);
-            header.setResultText(ConnectionMessage.REGISTER_SUCCESS_TEXT);
+            header.resultCode=ConnectionMessage.SUCCESS_CODE;
+            header.resultText=ConnectionMessage.REGISTER_SUCCESS_TEXT;
             ps.close();
             conn.close();
         } catch (ClassNotFoundException e) {

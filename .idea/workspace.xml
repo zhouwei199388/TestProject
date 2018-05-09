@@ -2,22 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c61833c-ef8c-4ac6-93b5-d8d426a21713" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/ShopInfoBean.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/ShopInfoBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/model/MenuBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/model/RequestHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/model/ResponseHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/model/ShopInfoBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/request/BaseRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/request/RegisterRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/response/BaseResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/response/ResponseHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfos.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/controller/MenuController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/springMVC/dao/MenuDao.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/BaseHeaderBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/Header.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/ShopInfoBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/UserBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/response/ShopResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/controller/LoginCheck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/BaseHeaderBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/Header.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/ShopInfoBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/UserBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/response/ShopResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/controller/LoginCheck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/springMVC/bean/BaseHeaderBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/springMVC/bean/Header.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/springMVC/bean/ShopInfoBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/springMVC/bean/UserBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/springMVC/controller/LoginCheck.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/response/ShopInfoResponse.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/bean/response/ShopInfoResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/controller/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/controller/RegisterController.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/controller/RegisterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/ConnectionMessage.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/ConnectionMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/controller/ShopInfoController.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/controller/ShopInfoController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/LoginDao.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/LoginDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/RegisterDao.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/RegisterDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/ShopInfoBean.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/ShopInfoBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/ShopInfoDao.class" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/classes/test/springMVC/dao/ShopInfoDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/response/ShopInfoResponse.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/bean/response/ShopInfoResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/controller/LoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/controller/RegisterController.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/controller/RegisterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/ConnectionMessage.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/ConnectionMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/controller/ShopInfoController.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/controller/ShopInfoController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/LoginDao.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/LoginDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/RegisterDao.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/RegisterDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/ShopInfoDao.class" afterPath="$PROJECT_DIR$/out/production/TestProject/test/springMVC/dao/ShopInfoDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/bean/ShopInfoBean.java" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/ShopInfoBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/TestProject_war_exploded/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfoResponse.java" afterPath="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfoResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/test/springMVC/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/controller/RegisterController.java" afterPath="$PROJECT_DIR$/src/test/springMVC/controller/RegisterController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/dao/ConnectionMessage.java" afterPath="$PROJECT_DIR$/src/test/springMVC/dao/ConnectionMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/controller/ShopInfoController.java" afterPath="$PROJECT_DIR$/src/test/springMVC/controller/ShopInfoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/dao/LoginDao.java" afterPath="$PROJECT_DIR$/src/test/springMVC/dao/LoginDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/dao/RegisterDao.java" afterPath="$PROJECT_DIR$/src/test/springMVC/dao/RegisterDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/springMVC/dao/ShopInfoDao.java" afterPath="$PROJECT_DIR$/src/test/springMVC/dao/ShopInfoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,148 +70,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/ConnectionMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/RegisterController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#871#872#0" expanded="false" />
-                <element signature="e#904#905#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponseUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/utils/ResponseUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopInfoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/ShopInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
-              <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#971#972#0" expanded="false" />
-                <element signature="e#1004#1005#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseHeaderBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/BaseHeaderBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#341#342#0" expanded="false" />
-                <element signature="e#377#378#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/Header.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#292#293#0" expanded="false" />
-                <element signature="e#325#326#0" expanded="false" />
-                <element signature="e#374#375#0" expanded="false" />
-                <element signature="e#418#419#0" expanded="false" />
-                <element signature="e#455#456#0" expanded="false" />
-                <element signature="e#488#489#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopInfoBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/ShopInfoBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-              <folding>
-                <element signature="e#333#334#0" expanded="false" />
-                <element signature="e#362#363#0" expanded="false" />
-                <element signature="e#403#404#0" expanded="false" />
-                <element signature="e#439#440#0" expanded="false" />
-                <element signature="e#474#475#0" expanded="false" />
-                <element signature="e#505#506#0" expanded="false" />
-                <element signature="e#553#554#0" expanded="false" />
-                <element signature="e#593#594#0" expanded="false" />
-                <element signature="e#631#632#0" expanded="false" />
-                <element signature="e#665#666#0" expanded="false" />
-                <element signature="e#719#720#0" expanded="false" />
-                <element signature="e#765#766#0" expanded="false" />
-                <element signature="e#801#802#0" expanded="false" />
-                <element signature="e#834#835#0" expanded="false" />
-                <element signature="e#886#887#0" expanded="false" />
-                <element signature="e#930#931#0" expanded="false" />
-                <element signature="e#965#966#0" expanded="false" />
-                <element signature="e#996#997#0" expanded="false" />
-                <element signature="e#1044#1045#0" expanded="false" />
-                <element signature="e#1084#1085#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/LoginDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1524812046735" expanded="true" signature="831:887" ph="select * fro... userinfo" />
+                <marker date="1525833305595" expanded="true" signature="878:934" ph="select * fro... userinfo" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/RegisterDao.java">
+      <file leaf-file-name="ShopInfoResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfoResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,6 +104,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>private</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>public</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -204,7 +126,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/logging.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/lib/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/context/WebApplicationContext.class" />
         <option value="$PROJECT_DIR$/src/test/springMVC/bean/test.java" />
         <option value="$PROJECT_DIR$/src/test/springMVC/mvcController.java" />
@@ -222,22 +143,33 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/shopInfo.jsp" />
         <option value="$PROJECT_DIR$/src/test/springMVC/utils/ResponseUtils.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/success.jsp" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/dao/ShopInfoDao.java" />
         <option value="$PROJECT_DIR$/src/test/springMVC/bean/BaseBean.java" />
         <option value="$PROJECT_DIR$/src/test/springMVC/bean/Shop.java" />
         <option value="$PROJECT_DIR$/src/test/springMVC/bean/response/Shop.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopResponse.java" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/controller/ShopInfoController.java" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfoResponse.java" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/bean/Header.java" />
         <option value="$PROJECT_DIR$/src/test/springMVC/bean/BaseHeaderBean.java" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/dao/LoginDao.java" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/bean/ShopInfoBean.java" />
         <option value="$PROJECT_DIR$/src/test/springMVC/dao/ConnectionMessage.java" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/test/springMVC/dao/RegisterDao.java" />
         <option value="$PROJECT_DIR$/src/test/springMVC/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/Header.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/controller/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/dao/MenuDao.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/dao/RegisterDao.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/dao/ShopInfoDao.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/controller/ShopInfoController.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/BaseResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/MenuBean.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfoResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/response/BaseResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/model/MenuBean.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/response/ResponseHeader.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/ShopInfoBean.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/model/ShopInfoBean.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/request/BaseRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/bean/request/RegisterRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/springMVC/dao/LoginDao.java" />
       </list>
     </option>
   </component>
@@ -255,9 +187,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="2064" />
+    <option name="x" value="-5" />
+    <option name="y" value="25" />
+    <option name="width" value="1832" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -276,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -337,10 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="springMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,6 +336,10 @@
               <option name="myItemId" value="bean" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="response" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -432,12 +363,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="response" />
+              <option name="myItemId" value="request" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springMVC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -456,16 +414,17 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaWorkspance\TestProject\src\test\springMVC\bean" />
+      <recent name="D:\JavaWorkspance\TestProject\src\test\springMVC\bean\request" />
+      <recent name="D:\JavaWorkspance\TestProject\web\WEB-INF\lib" />
+      <recent name="D:\JavaWorkspance\TestProject\web\WEB-INF\jsp" />
+      <recent name="C:\Users\15090\Documents\GitHub\TestProject\web\WEB-INF\jsp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaWorkspance\TestProject\web\WEB-INF" />
       <recent name="D:\JavaWorkspance\TestProject\web" />
       <recent name="D:\JavaWorkspance\TestProject\web\WEB-INF\jsp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaWorkspance\TestProject\web\WEB-INF\lib" />
-      <recent name="D:\JavaWorkspance\TestProject\web\WEB-INF\jsp" />
-      <recent name="C:\Users\15090\Documents\GitHub\TestProject\web\WEB-INF\jsp" />
-      <recent name="D:\JavaWorkspance\TestProject\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1141,11 +1100,14 @@
       <workItem from="1525310146845" duration="1950000" />
       <workItem from="1525336019517" duration="1972000" />
       <workItem from="1525394800747" duration="1197000" />
+      <workItem from="1525655097792" duration="20312000" />
+      <workItem from="1525742388460" duration="10619000" />
+      <workItem from="1525826634989" duration="4182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221028000" />
+    <option name="totallyTimeSpent" value="256141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1157,7 +1119,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2064" height="1056" extended-state="1" />
+    <frame x="-5" y="25" width="1832" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1174,25 +1136,25 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31344903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28308025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2407809" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2570499" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28741866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13572854" sideWeight="0.496208" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15801354" sideWeight="0.496208" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17643923" sideWeight="0.503792" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32385263" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28308025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1219,69 +1181,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1400,13 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/LoginCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1479,127 +1371,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/ShopInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/response/ShopResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfoResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/BaseHeaderBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#377#378#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/ShopInfoBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding>
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
-            <element signature="e#439#440#0" expanded="false" />
-            <element signature="e#474#475#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#553#554#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#631#632#0" expanded="false" />
-            <element signature="e#665#666#0" expanded="false" />
-            <element signature="e#719#720#0" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-            <element signature="e#801#802#0" expanded="false" />
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#886#887#0" expanded="false" />
-            <element signature="e#930#931#0" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#996#997#0" expanded="false" />
-            <element signature="e#1044#1045#0" expanded="false" />
-            <element signature="e#1084#1085#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#292#293#0" expanded="false" />
-            <element signature="e#325#326#0" expanded="false" />
-            <element signature="e#374#375#0" expanded="false" />
-            <element signature="e#418#419#0" expanded="false" />
-            <element signature="e#455#456#0" expanded="false" />
-            <element signature="e#488#489#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/LoginDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1524812046735" expanded="true" signature="831:887" ph="select * fro... userinfo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/ShopInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1611,41 +1387,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/RegisterController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#871#872#0" expanded="false" />
-            <element signature="e#904#905#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="235" column="29" lean-forward="false" selection-start-line="235" selection-start-column="29" selection-end-line="235" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/ConnectionMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/UserBean.java" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="162">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/RegisterDao.java">
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/LoginCheck.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/model/ShopInfoBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="162">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/model/ShopInfoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/request/BaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/request/RegisterRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/model/MenuBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/model/RequestHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/response/BaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/response/ResponseHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="398">
+          <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/controller/ShopInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="63" column="3" lean-forward="false" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/ConnectionMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/MenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="37" column="62" lean-forward="false" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/RegisterDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/ShopInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+          <folding>
+            <marker date="1525832698998" expanded="true" signature="1848:1937" ph="UPDATE shopi... " />
+            <marker date="1525832698998" expanded="true" signature="2870:2909" ph="SELECT * FRO... shopinfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/bean/response/ShopInfoResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/springMVC/dao/LoginDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1525833305595" expanded="true" signature="878:934" ph="select * fro... userinfo" />
+          </folding>
         </state>
       </provider>
     </entry>

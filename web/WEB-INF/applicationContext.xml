@@ -4,8 +4,4 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="userBean" class="test.springMVC.bean.UserBean">
-        <property name="userName" value="哈哈哈"></property>
-        <property name="passWord" value="123456789"></property>
-    </bean>
 </beans>

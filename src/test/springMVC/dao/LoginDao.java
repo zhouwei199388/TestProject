@@ -1,6 +1,7 @@
 package test.springMVC.dao;
 
 import org.springframework.stereotype.Repository;
+import test.springMVC.bean.model.ShopInfoBean;
 import test.springMVC.bean.response.ShopInfoResponse;
 
 import java.sql.*;
@@ -32,13 +33,16 @@ public class LoginDao {
                 System.out.print("userName = " + username);
                 if (username != null && username != "") {
                     shopInfoResponse.success();
-                    shopInfoResponse.setShopName(rs.getString("shopName"));
-                    shopInfoResponse.setShopNumber(rs.getString("shopNumber"));
-                    shopInfoResponse.setShopAddress(rs.getString("shopAddress"));
-                    shopInfoResponse.setPassWord(rs.getString("passWord"));
+                    ShopInfoBean shopInfo = new ShopInfoBean();
+                    shopInfo.shopId = rs.getInt("shopId");
+                    shopInfo.shopName = rs.getString("shopName");
+                    shopInfo.shopNumber = rs.getString("shopNumber");
+                    shopInfo.shopAddress = rs.getString("shopAddress");
+                    shopInfo.passWord = rs.getString("passWord");
+                    shopInfoResponse.shopInfo = shopInfo;
                 }
-            }else{
-                shopInfoResponse.getHeader().setResultText(ConnectionMessage.ERROR_PWD_NULL);
+            } else {
+                shopInfoResponse.header.resultText = ConnectionMessage.ERROR_PWD_NULL;
             }
             rs.close();
             conn.close();

@@ -1,7 +1,7 @@
 package test.springMVC.dao;
 
 import org.springframework.stereotype.Repository;
-import test.springMVC.bean.ShopInfoBean;
+import test.springMVC.bean.model.ShopInfoBean;
 
 import java.sql.*;
 
@@ -25,9 +25,9 @@ public class ShopInfoDao {
             conn = DriverManager.getConnection(ConnectionMessage.shopUrl, ConnectionMessage.user, ConnectionMessage.sqlPassWord);
             PreparedStatement preparedStatement = conn.prepareStatement("INSERT shopinfo(shopName,shopAddress) " +
                     "VALUE (?,?)");
-            System.out.print(shopInfo.getShopAddress());
-            preparedStatement.setString(1, shopInfo.getShopName());
-            preparedStatement.setString(2, shopInfo.getShopAddress());
+            System.out.print(shopInfo.shopAddress);
+            preparedStatement.setString(1, shopInfo.shopName);
+            preparedStatement.setString(2, shopInfo.shopAddress);
             preparedStatement.executeUpdate();
             type = ConnectionMessage.SUCCESS_CODE;
             preparedStatement.close();
@@ -56,9 +56,9 @@ public class ShopInfoDao {
                     .sqlPassWord);
             PreparedStatement ps = conn.prepareStatement("UPDATE shopinfo SET shopName=? shopAddress=? WHERE shopId " +
                     "LIKE ?");
-            ps.setString(1, shopInfoBean.getShopName());
-            ps.setString(2, shopInfoBean.getShopAddress());
-            ps.setInt(3, shopInfoBean.getShopId());
+            ps.setString(1, shopInfoBean.shopName);
+            ps.setString(2, shopInfoBean.shopAddress);
+            ps.setInt(3, shopInfoBean.shopId);
             ps.executeUpdate();
             type = ConnectionMessage.SUCCESS_CODE;
             ps.close();
