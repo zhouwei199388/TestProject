@@ -1,13 +1,11 @@
 package test.springMVC.dao;
 
 import org.springframework.stereotype.Repository;
-import test.springMVC.bean.response.ResponseHeader;
+import test.springMVC.bean.model.ResponseHeader;
+import test.springMVC.bean.response.MenuResponse;
 import test.springMVC.bean.model.MenuBean;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * Created by zouwei on 2018/5/7.
@@ -25,9 +23,7 @@ public class MenuDao {
         ResponseHeader header = new ResponseHeader();
         header.resultCode = ConnectionMessage.SERVER_ERROR_CODE;
         header.resultText = ConnectionMessage.SERVER_ERROR_TEXT;
-
         Connection conn;
-
         try {
             Class.forName(ConnectionMessage.driver);
             conn = DriverManager.getConnection(ConnectionMessage.shopUrl, ConnectionMessage.user, ConnectionMessage
@@ -48,5 +44,41 @@ public class MenuDao {
             e.printStackTrace();
         }
         return header;
+    }
+
+
+    /**
+     * 根据店id查相关菜单
+     * @param shopId
+     * @return
+     */
+    public MenuResponse getMenus(int shopId) {
+        MenuResponse menuResponse = new MenuResponse();
+        ResponseHeader header = new ResponseHeader();
+        Connection conn;
+        try {
+            Class.forName(ConnectionMessage.driver);
+            conn = DriverManager.getConnection(ConnectionMessage.shopUrl, ConnectionMessage.user, ConnectionMessage
+                    .sqlPassWord);
+            PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM menu WHERE shopId =?");
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs.next()) {
+                header.setSuccess();
+                MenuBean menuBean = new MenuBean();
+                menuBean.id = rs.getInt("id");
+                menuBean.shopId = rs.getInt("shopId");
+                menuBean.menuName = rs.getString("menuName");
+                menuBean.price = rs.getDouble("price");
+                menuResponse.menuBeans.add(menuBean);
+            } else {
+                header.setSuccessNoDate();
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return menuResponse;
     }
 }

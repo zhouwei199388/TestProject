@@ -1,6 +1,7 @@
 package test.springMVC.dao;
 
 import org.springframework.stereotype.Repository;
+import test.springMVC.bean.model.ResponseHeader;
 import test.springMVC.bean.model.ShopInfoBean;
 import test.springMVC.bean.response.ShopInfoResponse;
 
@@ -14,7 +15,7 @@ public class LoginDao {
 
     public ShopInfoResponse Login(String userName, String passWord) {
         ShopInfoResponse shopInfoResponse = new ShopInfoResponse();
-        shopInfoResponse.error();
+        ResponseHeader header = new ResponseHeader();
         Connection conn;
         try {
             Class.forName(ConnectionMessage.driver);
@@ -32,7 +33,7 @@ public class LoginDao {
                 String username = rs.getString("shopNumber");
                 System.out.print("userName = " + username);
                 if (username != null && username != "") {
-                    shopInfoResponse.success();
+                    header.setSuccess();
                     ShopInfoBean shopInfo = new ShopInfoBean();
                     shopInfo.shopId = rs.getInt("shopId");
                     shopInfo.shopName = rs.getString("shopName");
@@ -51,6 +52,7 @@ public class LoginDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        shopInfoResponse.header = header;
         return shopInfoResponse;
     }
 }
